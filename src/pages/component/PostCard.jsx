@@ -12,14 +12,10 @@ const PostCard = ({card}) => {
     setIsLiked(!isLiked)
   }
 
- 
 
-
-
-console.log(like)
   return (
 <div className="w-full bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300">
-      {/* Header: Profile Section */}
+
       <div className="flex items-center p-4">
         <img
           src={card.photo}
@@ -31,22 +27,16 @@ console.log(like)
           <p className="text-sm text-gray-500 font-semibold ">{card.date} </p>
         </div>
       </div>
-
-      {/* Caption */}
       <div className="px-4 pb-2">
         <p className="text-gray-700 text-[16px] font-medium">
         {card.desc}
         </p>
       </div>
-
-      {/* Post Image */}
       <img
         src={card.photo}
         alt="Post"
         className="w-full h-[420px] object-cover"
       />
-
-      {/* Actions */}
       <div className="px-4 py-3 border-t border-gray-200">
         <div className="flex justify-between text-gray-600 text-sm border-b-[1px] border-[#d0d0d0] pb-3">
           <div className="flex items-center space-x-1">
