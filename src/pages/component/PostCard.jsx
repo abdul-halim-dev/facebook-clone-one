@@ -14,7 +14,7 @@ const PostCard = ({card}) => {
 
 
   return (
-<div className="w-full bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300">
+<div className=" w-full bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300">
 
       <div className="flex items-center p-4">
         <img
@@ -48,7 +48,7 @@ const PostCard = ({card}) => {
           </div>
           <span className='cursor-pointer text-[14px] font-semibold hover:underline underline-offset-2'> {card.comment} comments</span>
         </div>
-        <div className="flex justify-around mt-4 ">
+        <div className=" flex justify-around mt-4 ">
           <div className=" cursor-pointer hover:bg-[#eaeaea] py-1 px-8 rounded-md flex items-center space-x-2 justify-center text-gray-600  ">
           <img onClick={likeHandler} className='w-[25px] h-[25px] object-contain' src="https://i.ibb.co.com/PmRkfqL/like1.png" alt="" />
             <span  className='text-[16px] font-semibold'> Like</span>

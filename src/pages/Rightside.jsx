@@ -8,7 +8,7 @@ import GroupDetails from './component/GroupDetails';
 
 const Rightside = () => {
   return (
-    <div className='w-[30%] pl-16 h-screen overflow-y-auto pr-2 sticky top-[46px] '>
+    <div className='hidden sm:flex flex-col w-[30%] pl-16 h-screen overflow-y-auto pr-2 sticky top-[46px] '>
       <div className='w-full py-4 border-b-[1px] border-[#d0d0d0] '>
       <span className='text-[18px] font-semibold text-[#74767a] '>Birthdays</span>
       <div className='w-full flex items-start justify-start gap-4 hover:bg-[#eaeaea] p-2 rounded-md duration-300 cursor-pointer'>

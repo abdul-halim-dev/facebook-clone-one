@@ -12,19 +12,20 @@ import {
 const Feed = () => {
  
   return (
-    <div className='w-[45%] flex items-center justify-start pt-5 flex-col gap-3 pb-4'>
+    <div className=' w-full sm:w-[45%] flex items-center px-2 sm:px-0 justify-start pt-5 flex-col gap-3 pb-4'>
 
 
-      <div className='w-full px-5'>
+      <div className='w-full px-1 sm:px-5'>
       <Carousel
       opts={{
         align: "start",
+        loop:"true"
       }}
       className="w-full z-20 "
     >
       <CarouselContent>
         {StoryCard.map((item) => (
-          <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={item.id} className=" basis-1/2 md:basis-1/3 lg:basis-1/4">
             <div className="  overlay   bg-slate-800 h-[220px] rounded-lg shadow cursor-pointer  relative">
              <div className=' w-[35px] h-[35px] absolute z-50 top-2 left-2'>
               <img className=' w-full h-full object-cover rounded-full ring-4' src={item.photo} alt="" />

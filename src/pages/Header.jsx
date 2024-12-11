@@ -75,8 +75,8 @@ const menuItem  = [
 console.log(active)
   return (
     <header className='w-full sticky top-0 z-50'>
-      <div className=' relative  top-0 px-[20px] py-2 w-full h-[50px] flex items-center justify-between bg-white shadow'>
-        <div className='w-[25%]'>
+      <div className=' flex-col sm:flex-row relative  top-0 px-[20px] py-2 w-full sm:h-[50px] flex items-center justify-between bg-white shadow'>
+        <div className=' w-full sm:w-[25%]'>
         <div className={`${show ? "w-full flex items-center justify-start gap-3":"w-[25%] pt-2 flex items-start bg-white justify-start gap-3 searchbar rounded-lg h-[150px] absolute top-0 left-0 "}`}>
            {
             show ? <span className='cursor-pointer w-[40px] h-[40px] bg-[#0866ff] rounded-full flex items-center justify-center '> <FaFacebookF className='text-white text-[30px] '/> </span>:  <span className='ml-2 w-[40px] h-[40px] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#f2f4f7] '> <FaArrowLeft  className='text-[#64686c] text-[20px] '/> </span>
@@ -93,18 +93,18 @@ console.log(active)
         </div>
         </div>
         
-        <div className=' w-[45%] flex items-center justify-center gap-3 '>
+        <div className=' w-full sm:w-[45%] flex items-center justify-center gap-3 '>
 
 
           {
             allItem.map((item)=>{
-              return <li onClick={()=>setactive(item.id)} title={item.title} className={`${active === item.id && "border-b-[3px] border-[#0866ff] "} px-8 py-[7px] hover:bg-[#f0f2f5] duration-300 transition-all hover:rounded-md `} key={item.id} > <span className={`${ active === item.id && 'text-[#3037f7]'} text-[30px] text-[#65686c]`} > {item.icon} </span>  </li>
+              return <li onClick={()=>setactive(item.id)} title={item.title} className={`${active === item.id && "border-b-[3px] border-[#0866ff] "} px-2 sm:px-8 py-2 sm:py-[7px] hover:bg-[#f0f2f5] duration-300 transition-all hover:rounded-md `} key={item.id} > <span className={`${ active === item.id && 'text-[#3037f7]'} text-[30px] text-[#65686c]`} > {item.icon} </span>  </li>
             })
           }
 
         </div>
         
-        <div className='w-[30%] flex items-center justify-end gap-2 '>
+        <div className=' w-[30%] hidden sm:flex items-center justify-end gap-2 '>
         
           <ul className='flex items-center justify-end gap-2'>
           {

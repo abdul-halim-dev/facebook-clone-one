@@ -39,7 +39,7 @@ if(loader)
   return (
     <div className='  w-full flex items-center justify-center flex-col gap-2 bg-[#f2f4f7] '>
       <Header/>
-    <div className=' px-[20px] w-full flex bg-[#f2f4f7] '>
+    <div className='px-0 sm:px-[20px] w-full flex bg-[#f2f4f7] '>
     <Leftside/>
     <Feed/>
     <Rightside/>

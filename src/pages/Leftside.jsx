@@ -17,7 +17,7 @@ const Leftside = () => {
   const carsToDisplay = showMore ? store : store.slice(0, 10);
 
   return (
-    <div className='leftSide w-[25%] sticky top-[47px] mr-8  '>
+    <div className=' hidden sm:flex flex-col leftSide w-[25%] sticky top-[47px] mr-8  '>
        
     
     <div className='  flex items-center justify-center flex-col gap-1'>
